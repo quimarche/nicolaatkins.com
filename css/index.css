@@ -1,3 +1,9 @@
+.carousel-caption {
+    color: #cd0f45 !important;
+    font-size: 150%;
+    text-shadow: none;
+}
+
 .emphasis {
     font-style: italic;
     font-weight: bolder;
