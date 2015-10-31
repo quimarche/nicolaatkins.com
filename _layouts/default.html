@@ -38,6 +38,21 @@
                 </div>
             </nav>
         </div>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                {% assign testimonials = site.testimonials %}
+                {% for testimonial in testimonials %}
+                    {% if forloop.first %}
+                        <div class="item active">
+                    {% else %}
+                        <div class="item">
+                    {% endif %}
+                        <img src="assets/silhouettes-a.png">
+                        <div class="carousel-caption">{{ testimonial.content }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
         <div class="container">
             {{ content }}
         </div>
