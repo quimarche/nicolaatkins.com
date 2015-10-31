@@ -2,6 +2,6 @@
     font-size: 14px
 }
 
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, a, a:focus, a:hover {
-    color: #cd0f45;
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand a:focus, .navbar-inverse .navbar-brand a:hover, .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, a, a:focus, a:hover {
+    color: #cd0f45 !important;
 }
