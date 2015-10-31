@@ -5,5 +5,4 @@ defaults:
         values:
             layout: "default"
 
-baseurl: "/nicolaatkins.com"
 title: "nicolaatkins.com"

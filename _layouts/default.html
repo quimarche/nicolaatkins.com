@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="{{ site.baseurl }}/css/index.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
         <meta charset="utf-8">
         <title>{{ site.title }}</title>
     </head>
     <body>
-        {{ content }}
+        <p>Pages</p>
+        <ul>
+            {% assign pages = site.pages | sort:"position" %}
+            {% for page in pages %}
+                <li>
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>{{ page.title }}</p>
+        <div class="page">
+            {{ content }}
+        </div>
     </body>
 </html>
