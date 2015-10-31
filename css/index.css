@@ -1,3 +1,8 @@
+.emphasis {
+    font-style: italic;
+    font-weight: bolder;
+}
+
 .navbar-brand {
     font-size: 14px
 }
