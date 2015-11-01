@@ -27,7 +27,7 @@
                         <ul class="nav navbar-nav">
                             {% assign pages = site.pages | sort:"position" %}
                             {% for page in pages %}
-                                {% unless page.brand %}
+                                {% unless page.brand or page.hide %}
                                     <li>
                                         <a href="{{ page.url }}">{{ page.title }}</a>
                                     </li>
