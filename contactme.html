@@ -2,13 +2,19 @@
 position: 9
 title: Contact me
 ---
-<p>Contact me</p>
+<p>Please feel free to send me a message.</p>
 <form action="//formspree.io/chris@nicolaatkins.com" method="post">
-    <input name="email" placeholder="Your email" type="email">
-    <textarea name="message" placeholder="Your message"></textarea>
-    <input type="submit" value="Send">
+    <div class="form-group ">
+        <input class="form-control" name="email" placeholder="Your email" type="email">
+    </div>
+    <div class="form-group ">
+        <textarea class="form-control" name="message" placeholder="Your message"></textarea>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="Send">
+    </div>
     <input name="_cc" type="hidden" value="chris@nicolaatkins.com">
-    <input name="_gotcha" type="text" style="display:none">
     <input name="_next" type="hidden" value="thankyou.html">
     <input name="_subject" type="hidden" value="Contact me">
+    <input name="_gotcha" style="display:none" type="text">
 </form>
